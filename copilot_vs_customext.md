@@ -1,7 +1,3 @@
-Here is your **updated and complete documentation**, with the **"Available Models in Copilot Chat"** and **"Model Descriptions & Reference Links"** sections now **combined into one cohesive section**. I've refined the content for clarity and ensured all data reflects the **most accurate model capabilities as of 2025**.
-
----
-
 # 🧠 GitHub Copilot Multimodel Support in VS Code
 
 ## 📌 Purpose
