@@ -1,102 +1,106 @@
-Absolutely! Here's your document reformatted for a **Markdown (.md)** file — ideal for use in GitHub README files or Markdown-supported tools.
+Great! Below is a **professional and structured Confluence documentation draft** for your topic: **“Using Multi-Model Support in GitHub Copilot Chat”**.
 
 ---
 
-```markdown
-# Using Multimodel Option in GitHub Copilot Chat
+## 🧠 Using Multi-Model Support in GitHub Copilot Chat
 
-## 📌 Purpose
+### 📌 Purpose
+With the recent update, GitHub Copilot users in our organization now have access to **multi-model support** within the **Copilot Chat window** in Visual Studio Code. This enhancement allows users to choose the most suitable AI model for their use case directly from the model drop-down.
 
-As of **April 2025**, our organization is enabling **Multimodel support** in GitHub Copilot Chat for **Visual Studio Code**.  
-This allows users to select from multiple AI models based on the use case or user preference, directly from the Copilot Chat window.
-
-This documentation explains:
-
-- How to use the multimodel option  
-- Overview of available models  
-- Best model recommendations for different coding scenarios  
-- Helpful links and disclaimers  
-- Screenshots to assist in understanding  
-
-## 🧠 Model Quick Guide (As of April 2025)
-
-| Model              | Description                                                                 | Best For                                                  | Link                                                                 |
-|-------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------|----------------------------------------------------------------------|
-| **GPT-4o**         | OpenAI’s flagship model with strong reasoning, multilingual support, faster responses, and excellent code generation. | General-purpose coding, debugging, testing, documentation | [GPT-4o](https://openai.com/index/gpt-4o)                            |
-| **Claude 3.5**     | Safety- and compliance-focused model with strong natural language understanding. | Secure coding, test generation, user documentation        | [Claude](https://www.anthropic.com/index/claude)                    |
-| **Claude 3.7**     | Improved context handling, policy-awareness, and reasoning capabilities over 3.5. | Policy enforcement, legacy migration, IaC                | [Claude](https://www.anthropic.com/index/claude)                    |
-| **Gemini 2.0 Flash** | Lightweight, fast-response model from Google DeepMind, ideal for automation and workflows. | CI/CD, API integration, DevOps scripts                   | [Gemini Flash](https://deepmind.google/technologies/gemini/)        |
-| **o1 (Preview)**   | Experimental OpenAI model optimized for performance and code tuning.         | Refactoring, debugging, performance optimization           | [OpenAI o1](https://openai.com/o1/)                                  |
-| **o3-mini**        | Minimalist model suitable for lightweight tasks and quick syntax checks.     | Code formatting, small fixes, cleanup                     | [OpenAI o3-mini](https://openai.com/index/openai-o3-mini/)          |
-
-> ⚠️ *Model performance and capabilities evolve over time. Vendors may update models without notice. Always refer to official sources for the latest information.*
+This documentation provides:
+- Steps to use the multi-model selector in GitHub Copilot Chat
+- A comparison of available models and when to use each
+- Short descriptions with reference links
+- Practical use case-to-model mapping
+- Tips and disclaimers to help users get the best out of this feature
 
 ---
 
-## 🛠️ How to Use the Multimodel Feature in Copilot Chat
-
-1. **Open Copilot Chat Window**  
-   Use the shortcut `Ctrl + I` or click the Copilot icon in the VS Code sidebar.
-
-2. **Select Model**  
-   Click the dropdown in the chat window toolbar.
-
-3. **Choose a Model**  
-   Pick the one most relevant to your task (see recommendations below).
-
-4. **Start the Conversation**  
-   Ask your coding question and the selected model will respond accordingly.
+### 👥 Audience
+All GitHub Copilot users across the organization using the **Visual Studio Code** extension.
 
 ---
 
-### 🖼️ Screenshot 1: Copilot Chat with Model Dropdown  
-*(Insert image here)*
+## 🚀 How to Use Multi-Model in GitHub Copilot
+
+1. Open Visual Studio Code.
+2. Launch the **Copilot Chat** panel from the sidebar or using the shortcut:  
+   **`Cmd+I` (Mac)** or **`Ctrl+I` (Windows/Linux)**.
+3. Click on the **Model Selector** drop-down at the top of the chat window.
+4. Select the model that best suits your use case.
+
+📸 *[Insert Screenshot Here: Copilot Chat window highlighting model selector]*
 
 ---
 
-## 📊 Model Selection by Use Case
+## 📚 Available Models in Copilot Chat
 
-| Use Case                    | Recommended Model(s)        | Strengths                                                                 |
-|----------------------------|-----------------------------|---------------------------------------------------------------------------|
-| Legacy Code Migration      | Claude 3.7, GPT-4o           | Claude for understanding context; GPT-4o for syntax migration             |
-| Test Case Generation       | GPT-4o, Claude 3.5           | GPT-4o for functional tests; Claude for secure/edge-case scenarios        |
-| Code Understanding         | Claude 3.7, Gemini Flash     | Claude for policy/code breakdowns; Gemini for cross-domain logic          |
-| Code Refactoring           | o1, GPT-4o                   | o1 for performance and structure; GPT-4o for simplification               |
-| Code Review                | Claude 3.7, o3-mini          | Claude for security & standards; o3-mini for syntax/structure             |
-| Multi-Language Development | GPT-4o, Gemini Flash         | GPT-4o for translation; Gemini for API/language bridging                  |
-| Documentation & Learning   | GPT-4o, Claude 3.5           | GPT-4o for writing help; Claude for clarity and accuracy                  |
-| Debugging & Troubleshooting| o1, GPT-4o                   | o1 for performance bugs; GPT-4o for tracing logical errors                |
-| API Integration            | Gemini Flash, GPT-4o         | Gemini for orchestration; GPT-4o for boilerplate/error handling           |
-| Infrastructure as Code     | GPT-4o, Claude 3.7           | GPT-4o for YAML, Terraform; Claude for config safety                      |
-| DevOps & CI/CD Automation  | Gemini Flash, o1             | Gemini for pipelines; o1 for optimization                                 |
-| Bug Detection & Fixing     | Claude 3.7, GPT-4o           | Claude for safe bug fixing; GPT-4o for fast refactor                      |
-| Code Generation & Chat     | GPT-4o, Claude 3.5           | GPT-4o for verbose code; Claude for back-and-forth clarification          |
+| Model Name         | Description                                                                 | Link |
+|--------------------|-----------------------------------------------------------------------------|------|
+| **GPT-4o**         | OpenAI’s latest GPT model optimized for speed and performance. Supports multi-modal inputs. | [OpenAI GPT-4o](https://openai.com/index/gpt-4o) |
+| **Claude 3.5 Sonnet** | High-performing model from Anthropic. Known for safety and reasoning tasks.         | [Claude 3.5](https://www.anthropic.com/index/claude-3) |
+| **Claude 3.7 Sonnet** | Latest update in Claude 3 series with enhanced performance.                           | [Claude Docs](https://docs.anthropic.com/claude) |
+| **Gemini 2.0 Flash** | Lightweight, fast model from Google. Ideal for rapid iterations and code exploration. | [Gemini](https://deepmind.google/technologies/gemini/) |
+| **o1 (Preview)**   | Experimental model currently in preview; excels in performance-heavy tasks.  | [O1 Preview Info](https://githubnext.com/projects/copilot-o1/) |
+| **O3-mini**        | Lightweight model designed for quick, low-resource interactions.             | *(Internal / Coming Soon)* |
+
+> 💡 *Note: Availability may vary as models are updated or deprecated.*
 
 ---
 
-### 🖼️ Screenshot 2: Output Comparison – GPT-4o vs Claude  
-*(Insert comparative screenshot here)*
+## 🧭 Model Comparison by Use Case
+
+| Use Case                        | Recommended Model(s)        | Why These Models?                                                                 |
+|--------------------------------|-----------------------------|------------------------------------------------------------------------------------|
+| **Legacy Code Migration**      | Gemini, GPT-4o              | Gemini for complex migrations; GPT-4o for syntax transformation and compatibility |
+| **Test Case Generation**       | GPT-4o, Claude 3.5          | GPT-4o for broad test cases; Claude for security and edge-case coverage           |
+| **Code Understanding**         | Gemini, Claude              | Gemini excels at complex or multi-layered logic; Claude provides safer summaries  |
+| **Code Refactoring**           | o1, GPT-4o                  | o1 for performance optimization; GPT-4o for structure/readability improvements     |
+| **Code Review**                | Claude, O3-mini             | Claude for security, best practices; O3-mini for performance and scale reviews     |
+| **Multi-Language Development** | Gemini, GPT-4o              | Gemini for integrations; GPT-4o for translation and syntax checks                  |
+| **Documentation & Learning**   | Claude, GPT-4o              | Claude gives context-rich responses; GPT-4o is fast for tutorials and examples     |
+| **Debugging & Troubleshooting**| o1, GPT-4o                  | o1 for identifying performance bottlenecks; GPT-4o for stack trace and logic help  |
+| **DevOps / CI-CD**             | Gemini, Claude              | Gemini for YAML/IaC; Claude for safe execution plans                              |
+| **Bugs Detection & Fixing**    | GPT-4o, Claude              | GPT-4o is good at general bug detection; Claude for secure fixes                   |
+| **API Integration**            | GPT-4o, Gemini              | GPT-4o for code samples; Gemini for multi-API orchestration                        |
+
+📸 *[Optional: Add screenshots showing interaction examples per use case]*
 
 ---
 
-## 🔗 Helpful References
+## 🔗 Quick Reference Links
 
-- [GitHub Copilot Documentation](https://docs.github.com/en/copilot)  
-- [GitHub Copilot Labs](https://githubnext.com/projects/copilot-labs/)  
-- [GPT-4o – OpenAI](https://openai.com/index/gpt-4o)  
-- [Claude – Anthropic](https://www.anthropic.com/index/claude)  
-- [Gemini Flash – DeepMind](https://deepmind.google/technologies/gemini/)  
-- [OpenAI o1](https://openai.com/o1/)  
-- [OpenAI o3-mini](https://openai.com/index/openai-o3-mini/)  
-
----
-
-## ✅ Summary
-
-With multiple models now available in GitHub Copilot Chat, users can select the most relevant one based on their development task.  
-This flexibility improves accuracy, performance, and contextual awareness — from debugging and code reviews to infrastructure and automation.
-```
+- [GitHub Copilot Official Documentation](https://docs.github.com/copilot)
+- [GitHub Copilot Labs](https://githubnext.com/projects/copilot-labs/)
+- [OpenAI GPT-4o](https://openai.com/index/gpt-4o)
+- [Claude by Anthropic](https://www.anthropic.com/)
+- [Gemini by Google DeepMind](https://deepmind.google/technologies/gemini/)
+- [Copilot O1 Project](https://githubnext.com/projects/copilot-o1/)
 
 ---
 
-Would you like me to export this into a `.md` file and send it to you for download?
+## ⚠️ Disclaimers
+
+- 🔄 **Model behavior may vary** over time as providers fine-tune and improve capabilities.
+- 🔍 Responses should be **reviewed for accuracy and compliance**, especially when using for production code.
+- 🔐 Do not enter **PII or confidential data** when interacting with AI models.
+
+---
+
+## 🙋 FAQ (Optional Section)
+
+**Q: Can I change models mid-conversation?**  
+A: No, you’ll need to start a new chat to select a different model.
+
+**Q: Is there a performance cost in using GPT-4o vs O3-mini?**  
+A: GPT-4o may be heavier on resources but provides deeper reasoning. O3-mini is lightweight and faster.
+
+---
+
+Let me know if you'd like:
+- This in **Confluence Storage Format or Wiki Markup**
+- Help embedding screenshots
+- A downloadable PDF version
+- Integration into your internal documentation tools like Jira, SharePoint, etc.
+
+Would you like me to generate a version of this formatted for copy-pasting into Confluence directly?
