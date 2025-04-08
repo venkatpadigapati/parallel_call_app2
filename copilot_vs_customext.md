@@ -1,80 +1,75 @@
-Using Multimodel Option in GitHub Copilot Chat
-📌 Purpose
-As of April 2025, our organization is enabling the Multimodel support in GitHub Copilot Chat for VS Code. This allows Copilot users to select from multiple AI models depending on the use case or user preference, directly from the Copilot Chat window.
+h1. 🚀 GitHub Copilot Multimodel Support (April 2025)
 
-This document explains:
+As of April 2025, our organization has enabled *multimodel support* in the *GitHub Copilot Chat* extension for Visual Studio Code. This allows users to select from multiple AI models directly within the Copilot Chat interface, based on the nature of their task or coding workflow.
 
-How to use the multimodel option
+This document provides:
+* How to use the multimodel feature in Copilot Chat
+* Quick overview of available models
+* Model selection guidance for various use cases
+* Reference links and examples for clarity
+* Screenshots for easier understanding
 
-A quick overview of available models
+----
 
-Best model recommendations for different coding scenarios
+h2. 🧠 Model Quick Guide
 
-Helpful resources, screenshots, and disclaimers
+|| Model || Description || Best For || Reference Link ||
+| *GPT-4o* | OpenAI’s latest multimodal model with high speed, accuracy, and support for code, text, and language tasks. | Code generation, documentation, multilingual support, debugging | [GPT-4o|https://openai.com/gpt-4o] |
+| *Claude 3.5 Sonnet* | Safety and compliance-focused model from Anthropic with strong reasoning and instruction following. | Secure coding, policy-aligned outputs, documentation | [Claude|https://www.anthropic.com/index/introducing-claude] |
+| *Claude 3.7 Sonnet* | Enhanced version of Claude with better context understanding, accuracy, and reasoning. | Legacy migration, IaC, secure DevOps | [Claude|https://www.anthropic.com/index/introducing-claude] |
+| *Gemini 2.0 Flash* | Lightweight and responsive model by Google DeepMind, optimized for performance and automation. | API integration, CI/CD pipelines, documentation generation | [Gemini|https://deepmind.google/technologies/gemini/] |
+| *o1 (Preview)* | Performance-tuned model from OpenAI optimized for code structure and debugging. | DevOps, performance tuning, low-level refactoring | [o1|https://openai.com/o1/] |
+| *03-mini* | Fast and minimalist model by OpenAI ideal for quick syntax corrections and formatting suggestions. | Code cleanup, formatting, review suggestions | [o3-mini|https://openai.com/index/openai-o3-mini/] |
 
-👥 Audience
-All GitHub Copilot users in our organization who use Copilot Chat in Visual Studio Code.
+*Note:* Model performance may evolve over time. Always refer to vendor links above for the latest information.
 
-🧠 Model Overview (As of April 2025)
-Model	Description	Best For	Link
-GPT-4o	OpenAI’s flagship model with strong reasoning, code generation, multilingual support, and faster speed.	General-purpose coding, debugging, testing, documentation	GPT-4o
-Claude 3.5 Sonnet	Safety- and compliance-focused model from Anthropic with strong natural language understanding.	Secure coding, test gen, user documentation	Claude
-Claude 3.7 Sonnet	Advanced contextual understanding, longer context handling, better reasoning than 3.5.	Policy enforcement, legacy code migration, IaC	Claude
-Gemini 2.0 Flash	Lightweight, fast-response model by Google DeepMind. Works well with cross-domain logic and automation.	CI/CD workflows, API integration, DevOps documentation	Gemini Flash
-o1 (Preview)	Experimental performance-optimized model from OpenAI. Good for refactoring and debugging.	Code performance tuning, DevOps scripts, procedural improvements	o1
-03-mini	Minimalist OpenAI model ideal for fast syntax and structural improvements.	Code cleanup, formatting, small fix suggestions	03-mini
-⚠️ Disclaimer: Model performance may evolve over time. Vendors may update models or capabilities without notice. Refer to their official documentation for the latest updates.
+----
 
-🛠️ How to Use the Multimodel Feature in Copilot Chat
-Open Copilot Chat Window
+h2. 🛠️ How to Use the Multimodel Feature in VS Code
 
-Use the shortcut Ctrl + I (or open via the Copilot icon in VS Code sidebar)
+# Open GitHub Copilot Chat in Visual Studio Code.
+# Click the dropdown at the top of the chat window.
+# Select one of the available models.
+# Start asking your coding questions—responses will reflect the selected model’s behavior.
 
-Select Model
+!https://dummyimage.com/800x300/cccccc/000000&text=Copilot+Chat+Window+-+Model+Dropdown!
+*_Figure 1: Model selection from Copilot Chat window_*
 
-In the chat window, click the dropdown at the top to see available models.
+----
 
-Choose a Model
+h2. 📊 Model Selection by Use Case
 
-Pick the one most relevant to your task (see the guide below)
+|| Use Case || Recommended Model(s) || Reasoning ||
+| *Legacy Code Migration* | Claude 3.7, GPT-4o | Claude offers strong contextual understanding and GPT-4o simplifies legacy syntax refactoring. |
+| *Test Case Generation* | GPT-4o, Claude 3.5 | GPT-4o covers a wide range of test types, while Claude ensures edge-case and security-focused tests. |
+| *Code Understanding* | Claude 3.7, Gemini Flash | Claude handles compliance-heavy breakdowns; Gemini helps in domain-specific comprehension. |
+| *Code Refactoring* | o1, GPT-4o | o1 improves structure and performance; GPT-4o enhances readability and best practices. |
+| *Code Review* | Claude 3.7, 03-mini | Claude offers security-focused analysis; 03-mini makes light structural improvements. |
+| *Multi-Language Development* | GPT-4o, Gemini Flash | GPT-4o helps with translation; Gemini assists in integrating cross-language systems. |
+| *Documentation & Learning* | GPT-4o, Claude 3.5 | GPT-4o produces clean explanations; Claude enhances clarity and safety in outputs. |
+| *Debugging & Troubleshooting* | o1, GPT-4o | o1 identifies performance bottlenecks; GPT-4o traces logical or structural bugs. |
+| *API Integration* | Gemini Flash, GPT-4o | Gemini excels in orchestration tasks; GPT-4o provides integration examples and error handling. |
+| *Infrastructure as Code (IaC)* | GPT-4o, Claude 3.7 | GPT-4o for writing Terraform/YAML scripts; Claude ensures secure configuration. |
+| *DevOps & CI/CD Automation* | Gemini Flash, o1 | Gemini supports task automation and o1 optimizes procedural logic. |
+| *Bug Detection & Fixing* | Claude 3.7, GPT-4o | Claude for safety and compliance; GPT-4o for logic and patching. |
+| *Code Generation & Conversation* | GPT-4o, Claude 3.5 | GPT-4o is fluent in multi-language output; Claude provides guided, step-by-step outputs. |
 
-Interact with the Model
+!https://dummyimage.com/800x300/b3d9ff/000000&text=Model+Output+Comparison:+GPT-4o+vs+Claude!
+*_Figure 2: Comparing different models' responses_*
 
-Ask your coding question, and the selected model will respond accordingly.
+----
 
-🖼️ Screenshot 1: Copilot Chat with Model Dropdown
+h2. 🔗 Reference Links
 
-📊 Model Selection by Use Case
-Use Case	Recommended Model(s)	Strengths
-Legacy Code Migration	Claude 3.7, GPT-4o	Claude for understanding context and safety; GPT-4o for syntax-focused migration
-Test Case Generation	GPT-4o, Claude 3.5	GPT-4o for general functional tests; Claude for secure and edge-case testing
-Code Understanding	Claude 3.7, Gemini Flash	Claude for safety-driven breakdowns; Gemini for complex cross-domain logic
-Code Refactoring	o1, GPT-4o	o1 for performance and structure; GPT-4o for readability and simplification
-Code Review	Claude 3.7, 03-mini	Claude for security and standards; 03-mini for quick structural suggestions
-Multi-Language Development	GPT-4o, Gemini Flash	GPT-4o for translation; Gemini for API bridging across languages
-Documentation & Learning	GPT-4o, Claude 3.5	GPT-4o for natural writing; Claude for clarity and accuracy
-Debugging & Troubleshooting	o1, GPT-4o	o1 for performance bugs; GPT-4o for tracing logical errors
-API Integration	Gemini Flash, GPT-4o	Gemini for orchestration; GPT-4o for generating boilerplate and handling errors
-Infrastructure as Code (IaC)	GPT-4o, Claude 3.7	GPT-4o for YAML, Terraform scripts; Claude for secure configs
-DevOps & CI/CD Automation	Gemini Flash, o1	Gemini for pipelines and hybrid scripting; o1 for tuning
-Bug Detection & Fixing	Claude 3.7, GPT-4o	Claude for safe fixes; GPT-4o for scanning and refactoring
-Code Generation & Conversation	GPT-4o, Claude 3.5	GPT-4o for verbose generation; Claude for conversational support
-🖼️ Screenshot 2: Model Output Example - GPT-4o vs Claude
+* [GitHub Copilot Docs|https://docs.github.com/en/copilot]
+* [GPT-4o|https://openai.com/gpt-4o]
+* [Claude Models|https://www.anthropic.com/index/introducing-claude]
+* [Gemini by Google|https://deepmind.google/technologies/gemini/]
+* [OpenAI o1|https://openai.com/o1/]
+* [OpenAI o3-mini|https://openai.com/index/openai-o3-mini/]
 
-🔗 Helpful References
-Copilot Documentation
+----
 
-GitHub Copilot Labs
+h2. ⚠️ Disclaimer
 
-GPT-4o
-
-Claude Models
-
-Gemini Flash
-
-OpenAI o1
-
-OpenAI o3-mini
-
-✅ Summary
-With multiple models now available in Copilot Chat, users can tailor their coding assistance to the best-suited model per task. Whether you're debugging, writing infrastructure code, or reviewing security, selecting the right model gives more accurate, faster, and context-aware results.
+The performance and behavior of AI models may change over time as they are continuously improved. Model responses can vary based on input complexity, domain, and updates by model providers. Please refer to model-specific documentation for the most accurate and recent information.
